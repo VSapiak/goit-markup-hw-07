@@ -419,6 +419,11 @@ p {
 }
 
 
+.button-modal-phone {
+    display: none;
+}
+
+
 /*----------------- Hero ------------------*/
 
 .hero {
@@ -969,8 +974,6 @@ p {
 @media screen and (max-width: 427px) {
     .container {
         width: 320px;
-        padding-left: 16px;
-        padding-right: 16px;
     }
 
     .section {
@@ -992,22 +995,6 @@ p {
         color: #FFFFFF;
     }
 
-    .menu-item,
-    .auth-menu {
-        display: none;
-    }
-
-    .nav_menu_auth::after {
-        content: '';
-        cursor: pointer;
-        position: absolute;
-        top: 24px;
-        left: 85%;
-        width: 32px;
-        height: 22px;
-        background-image: url('../images/decoretion/3_line.svg');
-    }
-
     /* Modal */
     .modal {
         width: 300px;
@@ -1024,11 +1011,6 @@ p {
         margin: 0 auto;
     }
 
-    .svg-icon-form-name,
-    .svg-icon-form-phone,
-    .svg-icon-form-email {
-        top: 45%;
-    }
 
     .icon-checkbox {
         width: 16px;
@@ -1045,13 +1027,6 @@ p {
 
     .section--text {
         flex-direction: column;
-    }
-
-    .icon-antenna::before,
-    .icon-clock::before,
-    .icon-diagram::before,
-    .icon-astronaut::before {
-        display: none;
     }
 
     .section-sybtitle {
@@ -1163,6 +1138,92 @@ p {
         margin-right: auto;
         margin-left: auto;
     }
+
+    
+
+}
+
+@media  screen and (max-width:767px) {
+    .menu-item,
+    .auth-menu {
+        display: none;
+    }
+
+    .icon-antenna::before,
+    .icon-clock::before,
+    .icon-diagram::before,
+    .icon-astronaut::before {
+        display: none;
+    }
+
+    .svg-icon-form-name,
+    .svg-icon-form-phone,
+    .svg-icon-form-email {
+        top: 45%;
+    }
+
+
+    .menu-button-mobail{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0;
+    }
+    .mobile-menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        background-color: #E7E9FC;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(100%);
+        transition: opasity var(--taming-function),
+            transform var(--taming-function),
+            visibility var(--taming-function);
+    }
+    .mobile-menu.is-open {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .mobile-menu-close-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 8px;
+        height: 8px;
+    }
+
+    .mobile-menu-close-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 40px;
+        margin-right: 40px;
+        width: 24px;
+        height: 24px;
+        background-color: var(--color-cornflower);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        background-size: 8px;
+    
+        transition: background-color 250ms var(--taming-function),
+            background-image 250ms var(--taming-function),
+            box-shadow 250ms var(--taming-function);
+    }
+
+    .mobile-menu-close-button:active,
+    .mobile-menu-close-button:focus {
+        background-color: #404BBF;
+    }
+
 }
 
 
@@ -1210,24 +1271,19 @@ p {
         margin: 0 auto;
     }
 
-    .svg-icon-form-name,
-    .svg-icon-form-phone,
-    .svg-icon-form-email {
-        top: 45%;
-    }
+    
 
     .icon-checkbox {
         width: 16px;
         height: 14px;
     }
 
-
-
-    /* End Modal */
-
-    .menu-item,
-    .auth-menu {
-        display: none;
+    /* Button Modal Window Phone */
+    .mobile-menu-open{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0;
     }
 
     .hero {
@@ -1240,12 +1296,7 @@ p {
         width: 100%;
     }
 
-    .icon-antenna::before,
-    .icon-clock::before,
-    .icon-diagram::before,
-    .icon-astronaut::before {
-        display: none;
-    }
+  
 
     .section-sybtitle {
         font-weight: 700;
@@ -1261,7 +1312,6 @@ p {
     }
 
     .section-text {
-        font-weight: 500;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.02em;
@@ -1369,13 +1419,29 @@ p {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width:768px) and (max-width: 1200px) {
     .container {
         width: 768px;
+    }
+
+    .icon-antenna::before,
+    .icon-clock::before,
+    .icon-diagram::before,
+    .icon-astronaut::before {
+        display: none;
     }
 
     .menu-auth {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .menu-button-mobail, .mobile-menu, .section-doing {
+        display: none;
+    }
+}
+@media screen and (min-width:1200px) {
+    .menu-button-mobail, .mobile-menu {
+        display: none;
     }
 }
