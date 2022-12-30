@@ -21,7 +21,7 @@
     <div class="container nav-container">
       <a href="./index.html" class="logo"><span class="logo_span">web</span>studio</a>
       <nav class="nav_menu">
-        <ul class="menu-item">
+        <ul class="menu-item list-header">
           <li class="menu list">
             <a class="menu-link activ" href="#">Studio</a>
           </li>
@@ -34,7 +34,7 @@
         </ul>
       </nav>
 
-      <ul class="nav_menu_auth">
+      <ul class="nav_menu_auth list-header">
         <li class="auth-menu list">
           <a class="item-auth" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
@@ -57,14 +57,63 @@
             <use href="./images/icons.svg/symbol-defs-burger.svg#icon-exet_menu-burger"></use>
           </svg>
         </button>
-        
+        <ul class="menu-list-mobile">
+          <li class="menu-link-mobile list">
+            <a class="item-mobile activ-item" href="">Studio</a>
+          </li>
+          <li class="menu-link-mobile list">
+            <a class="item-mobile" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu-link-mobile list">
+            <a class="item-mobile" href="">Contacts</a>
+          </li>
+        </ul>
+        <ul class="menu-list-mobail-auth">
+          <li class="auth-menu-mobile list">
+            <a class="auth-mobile auth-mobile-phone" href="tel:+110001111111">+11 (000) 111-11-11
+        </a>
+      </li>
+          <li class="auth-menu-mobile list">
+            <a class="auth-mobile auth-mobile-mailto" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="list-network-menu">
+          <li class="icon-network-menu list">
+            <a class="social-icon-menu" href="">
+              <svg class="icon-nnetwork-svg" width="24" height="24">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-instagram1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-network-menu list">
+            <a class="social-icon-menu" href="">
+              <svg class="icon-nnetwork-svg" width="24" height="19.5">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-twitter1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-network-menu list">
+            <a class="social-icon-menu" href="">
+              <svg class="icon-nnetwork-svg" width="24" height="24">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-facebook1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-network-menu list">
+            <a class="social-icon-menu" href="">
+              <svg class="icon-nnetwork-svg" width="24" height="24">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin2"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </div> 
   </header>
   <main>
     <!-- Section_zero Hero -->
     <section class="hero">
-      <div class="container">
+      <div class="container container-phone">
         <h1 class="title">
           Effective Solutions<br />
           for Your Business
@@ -141,30 +190,30 @@
     <section class="section section-nature">
       <div class="container">
         <h2 class="hide">Nature</h2>
-        <ul class="section--text">
+        <ul class="section--text conteiner-cullomn">
           <li class="section-list list icon-antenna">
-            <h3 class="section-sybtitle">Strategy</h3>
+            <h3 class="section-sybtitle text-title">Strategy</h3>
             <p class="section-text section-text-strategy">
               Our goal is to identify the business problem to walk away with
               the perfect and creative solution.
             </p>
           </li>
           <li class="section-list list icon-clock">
-            <h3 class="section-sybtitle">Punctuality</h3>
+            <h3 class="section-sybtitle text-title">Punctuality</h3>
             <p class="section-text">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
           <li class="section-list list icon-diagram">
-            <h3 class="section-sybtitle">Diligence</h3>
+            <h3 class="section-sybtitle text-title">Diligence</h3>
             <p class="section-text">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
           <li class="section-list list icon-astronaut">
-            <h3 class="section-sybtitle">Technologies</h3>
+            <h3 class="section-sybtitle text-title">Technologies</h3>
             <p class="section-text section-text-technologies">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
@@ -194,8 +243,8 @@
     <section class="section section-could">
       <div class="container">
         <h2 class="section-title">Our Team</h2>
-        <ul class="user-list">
-          <li class="user-item list">
+        <ul class="user-list conteiner-cullomn">
+          <li class="user-item list ">
             <img class="card" src="images/Mark_Guerrero.jpg" alt="Mark Guerrero" width="264px" />
             <div class="container-text">
               <h3 class="user-subtitle">Mark Guerrero</h3>
@@ -411,7 +460,7 @@
   </main>
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
+    <div class="container conteiner-cullomn">
       <div class="container-footer">
         <a href="" class="logo"><span class="logo_span">web</span><span class="logo_footer">studio</span></a>
         <p class="footer-text">
@@ -419,7 +468,7 @@
           digital marketing & growth solutions.
         </p>
       </div>
-      <div class="container-social">
+      <div class="container-social container-reset">
         <h3 class="text-social">Social media</h3>
         <ul class="footer-icon">
           <li class="icon-footer-svg list">
@@ -453,7 +502,7 @@
           </li>
         </ul>
       </div>
-      <div class="container-subscibe">
+      <div class="container-subscibe container-reset">
         <h3 class="text-social">Subscribe</h3>
         <form class="form-mailto" action="">
           <input class="input-mailto" type="email" name="email" placeholder="E-mail" required>
