@@ -456,7 +456,7 @@ p {
 
 @media screen and (min-width: 768px) and (max-width:960px) {
     .hero {
-        background-image:linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office_hero-768px.jpg");
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office_hero-768px.jpg");
     }
 }
 
@@ -603,12 +603,6 @@ p {
     text-transform: capitalize;
 }
 
-.section-sybtitle {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 8px;
-}
 
 .icon-antenna::before {
     content: '';
@@ -1294,6 +1288,14 @@ p {
         padding-bottom: 192px;
     }
 
+    .section-sybtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: var(--color-navy-blue);
+    }
+
     .mobile-menu,
     .menu-button-mobail {
         display: none;
@@ -1457,7 +1459,7 @@ p {
 
     .container-reset {
         margin: 0;
-        padding-top: 72px;
+        margin-top: 72px;
     }
 
     .form-mailto {
@@ -1502,13 +1504,13 @@ p {
     .container-social {
         margin: 0;
         padding: 0;
-        padding-left: 24px;
+        margin-left: 24px;
     }
 
     .container-subscibe {
         margin: 0;
         padding: 0;
-        padding-top: 72px;
+        margin-top: 72px;
     }
 }
 
