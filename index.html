@@ -43,15 +43,15 @@
         </li>
       </ul>
       <!-- Android Mobail -->
-      <button type="button" class="menu-button-mobail js-open-menu" class="menu-toggle js-open-menu" aria-expanded="false"
-        aria-controls="mobile-menu">
+      <button type="button" class="menu-button-mobail js-open-menu" class="menu-toggle js-open-menu"
+        aria-expanded="false" aria-controls="mobile-menu">
         <svg class="menu-button-mobail-icon" width="32" height="22">
           <use href="./images/icons.svg/symbol-defs-burger.svg#icon-charm_menu-hamburger"></use>
         </svg>
       </button>
     </div>
     <div class="mobile-menu js-menu-container">
-      <div class="conteiner mobile-menu-conteiner">
+      <div class="conteiner-menu mobile-menu-conteiner">
         <button class="mobile-menu-close-button menu-toggle js-close-menu">
           <svg class="mobile-menu-close-icon">
             <use href="./images/icons.svg/symbol-defs-burger.svg#icon-exet_menu-burger"></use>
@@ -68,47 +68,49 @@
             <a class="item-mobile" href="">Contacts</a>
           </li>
         </ul>
-        <ul class="menu-list-mobail-auth">
-          <li class="auth-menu-mobile list">
-            <a class="auth-mobile auth-mobile-phone" href="tel:+110001111111">+11 (000) 111-11-11
-        </a>
-      </li>
-          <li class="auth-menu-mobile list">
-            <a class="auth-mobile auth-mobile-mailto" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-        </ul>
-        <ul class="list-network-menu">
-          <li class="icon-network-menu list">
-            <a class="social-icon-menu" href="">
-              <svg class="icon-nnetwork-svg" width="24" height="24">
-                <use href="./images/icons.svg/symbol-defs.svg#icon-instagram1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="icon-network-menu list">
-            <a class="social-icon-menu" href="">
-              <svg class="icon-nnetwork-svg" width="24" height="19.5">
-                <use href="./images/icons.svg/symbol-defs.svg#icon-twitter1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="icon-network-menu list">
-            <a class="social-icon-menu" href="">
-              <svg class="icon-nnetwork-svg" width="24" height="24">
-                <use href="./images/icons.svg/symbol-defs.svg#icon-facebook1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="icon-network-menu list">
-            <a class="social-icon-menu" href="">
-              <svg class="icon-nnetwork-svg" width="24" height="24">
-                <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin2"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="mune-lover-part">
+          <ul class="menu-list-mobail-auth">
+            <li class="auth-menu-mobile list">
+              <a class="auth-mobile auth-mobile-phone" href="tel:+110001111111">+11 (000) 111-11-11
+              </a>
+            </li>
+            <li class="auth-menu-mobile list">
+              <a class="auth-mobile auth-mobile-mailto" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="list-network-menu">
+            <li class="icon-network-menu list">
+              <a class="social-icon-menu" href="">
+                <svg class="icon-nnetwork-svg" width="24" height="24">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-instagram1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-network-menu list">
+              <a class="social-icon-menu" href="">
+                <svg class="icon-nnetwork-svg" width="24" height="19.5">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-twitter1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-network-menu list">
+              <a class="social-icon-menu" href="">
+                <svg class="icon-nnetwork-svg" width="24" height="24">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-facebook1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-network-menu list">
+              <a class="social-icon-menu" href="">
+                <svg class="icon-nnetwork-svg" width="24" height="24">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div> 
+    </div>
   </header>
   <main>
     <!-- Section_zero Hero -->
@@ -228,13 +230,15 @@
         <h2 class="section-title">What are we doing</h2>
         <ul class="list_work">
           <li class="list">
-            <img class="card" src="images/MacBook.jpg" alt="MacBook" width="360px" />
+            <img srcset="./images/MacBook@2.jpg, 2x" class="card" src="images/MacBook.jpg" alt="MacBook"
+              width="360px" />
           </li>
           <li class="list">
-            <img class="card" src="images/Phone.jpg" alt="Phone" width="360px" />
+            <img srcset="./images/Phone@2x.jpg, 2x" class="card" src="images/Phone.jpg" alt="Phone" width="360px" />
           </li>
           <li class="list">
-            <img class="card" src="images/Phone_on_laptop.jpg" alt="Phone on laptop" width="360px" />
+            <img srcset="./images/Phone_on_laptop@2x.jpg, 2x" class="card" src="images/Phone_on_laptop.jpg"
+              alt="Phone on laptop" width="360px" />
           </li>
         </ul>
       </div>
@@ -245,7 +249,7 @@
         <h2 class="section-title">Our Team</h2>
         <ul class="user-list conteiner-cullomn container-wrap">
           <li class="user-item list ">
-            <img class="card" src="images/Mark_Guerrero.jpg" alt="Mark Guerrero" width="264px" />
+            <img class="card" srcset="./images/Mark_Guerrero@2x.jpg, 2x" src="images/Mark_Guerrero.jpg" alt="Mark Guerrero" width="264px" />
             <div class="container-text">
               <h3 class="user-subtitle">Mark Guerrero</h3>
               <p class="user-text">Product Designer</p>
@@ -283,7 +287,7 @@
             </div>
           </li>
           <li class="user-item list">
-            <img class="card" src="images/Tom_Ford.jpg" alt="Tom Ford" width="264px" />
+            <img class="card" srcset="./images/Tom_Ford@2x.jpg, 2x" src="images/Tom_Ford.jpg" alt="Tom Ford" width="264px" />
             <div class="container-text">
               <h3 class="user-subtitle">Tom Ford</h3>
               <p class="user-text">Frontend Developer</p>
@@ -321,7 +325,7 @@
             </div>
           </li>
           <li class="user-item list">
-            <img class="card" src="images/Camila_Garcia.jpg" alt="Camila Garcia" width="264px" />
+            <img class="card" srcset="./images/Camila_Garcia@2x.jpg, 2x" src="images/Camila_Garcia.jpg" alt="Camila Garcia" width="264px" />
             <div class="container-text">
               <h3 class="user-subtitle">Camila Garcia</h3>
               <p class="user-text">Marketing</p>
@@ -359,7 +363,7 @@
             </div>
           </li>
           <li class="user-item list">
-            <img class="card" src="images/Daniel_Wilson.jpg" alt="Daniel Wilson" width="264px" />
+            <img class="card" srcset="./images/Daniel_Wilson@2x.jpg, 2x" src="images/Daniel_Wilson.jpg" alt="Daniel Wilson" width="264px" />
             <div class="container-text">
               <h3 class="user-subtitle">Daniel Wilson</h3>
               <p class="user-text">UI Designer</p>
