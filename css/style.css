@@ -83,11 +83,11 @@ p {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    transition: transform 250ms var(--taming-function);
+    transition: transform 250ms var(--taming-function), visibility 250ms;
 
     width: 408px;
     height: 600px;
-    max-height: 90vh;
+    max-height: 95vh;
     overflow-y: scroll;
 
 
